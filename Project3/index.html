@@ -8,47 +8,49 @@
   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <h1 class="name">The Code Review</h1>
-    </header>
+  <header class="main-header">
+    <h1 class="name">The Code Review</h1>
+  </header>
 
-      <form action="index.html" method="post" class="flex">
-        <div class="description">
-          <h1 class="signup">Signup for Our Newsletter!</h1>
-          <h2 class="des">Get the latest news on how your code is doing right in your inbox.</h2>
+  <form action="index.html" method="post" class="flex">
+
+    <div class="description">
+      <h1 class="signup">Signup for Our Newsletter!</h1>
+      <h2 class="des">Get the latest news on how your code is doing right in your inbox.</h2>
+    </div>
+
+    <fieldset class="flex">
+      <legend class="category">Contact Information</legend>
+      <div class="categoryone flex">
+        <div class="box">
+          <div class="dslabel"><label for="full-name">Full Name:</label></div>
+          <div class="dsspace"><input class="first" type="text" id="full-name" name="full_name" placeholder="Required" Required></div>
         </div>
 
-       <fieldset class="flex">
-         <legend class="category">Contact Information</legend>
-         <div class="categoryone flex">
-            <div class="box">
-              <div class="dslabel"><label for="full-name">Full Name:</label></div>
-              <div class="dsspace"><input class="first" type="text" id="full-name" name="full_name" placeholder="Required" Required></div>
-            </div>
+        <div class="box">
+          <div class="dslabel"><label for="email">E-mail Address:</label></div>
+          <div class="dsspace"><input class="first" type="email" id="email" name="user_email" placeholder="Required" Required></div>
+        </div>
 
-            <div class="box">
-              <div class="dslabel"><label for="email">E-mail Address:</label></div>
-              <div class="dsspace"><input class="first" type="email" id="email" name="user_email" placeholder="Required" Required></div>
-            </div>
+        <div class="box">
+          <div class="dslabel"><label for="number">Phone Number:</label></div>
+          <div class="dsspace"><input class="first" type="tel" id="number" name="phone_number" placeholder="Phone Number"></div>
+        </div>
 
-            <div class="box">
-              <div class="dslabel"><label for="number">Phone Number:</label></div>
-              <div class="dsspace"><input class="first" type="tel" id="number" name="phone_number" placeholder="Phone Number"></div>
-            </div>
+        <div class="box">
+          <div class="dslabel"><label for="address">Street Address:</label></div>
+          <div class="dsspace"><input class="first" type="text" id="address" name="street_address" placeholder="Street Address"></div>
+        </div>
 
-            <div class="box">
-              <div class="dslabel"><label for="address">Street Address:</label></div>
-              <div class="dsspace"><textarea class="first" id="address" name="street_address" placeholder="Street Address"></textarea></div>
-            </div>
+        <div class="box">
+          <div class="dslabel"><label for="city">City:</label></div>
+          <div class="dsspace"><input class="first" type="text" id="city" name="city" placeholder="City"></div>
+        </div>
 
-            <div class="box">
-              <div class="dslabel"><label for="city">City:</label></div>
-              <div class="dsspace"><input class="first" type="text" id="city" name="city" placeholder="City"></div>
-            </div>
-
-            <div class="box">
-              <div class="dslabel"><label for="state">State:</label></div>
-              <div class="dsspace"><select class="first" id="state" name="state">
+        <div class="box">
+          <div class="dslabel"><label for="state">State:</label></div>
+          <div class="dsspace">
+            <select class="first" id="state" name="state">
                 <option selected="selected" class="state_ph">Choose state</option>
                 <option>Selangor</option>
                 <option>Penang</option>
@@ -64,52 +66,56 @@
                 <option>Perak</option>
                 <option>Negeri Sembilan</option>
                 <option>Wilayah Persekutuan</option>
-              </select></div>
-            </div>
-
-          <div class="box">
-            <div class="dslabel"><label for="zip">Zip Code:</label></div>
-            <div class="dsspace"><input class="first zip" type="text" id="zip" name="zip_code" placeholder="Zip Code"></div>
+            </select>
           </div>
         </div>
-      </fieldset>
-      <fieldset class="flex">
-          <legend class="category">Newsletter</legend>
-            <p>Select the newsletters you would like to receive:</p>
-            <div>
-              <input type="checkbox" id="htmlnews" name="newsletter" value="html">
-              <label for="htmlnews">HTML News</label><br>
-            </div>
 
-            <div>
-              <input type="checkbox" id="cssnews" name="newsletter" value="css">
-              <label for="cssnews">CSS News</label><br>
-            </div>
+        <div class="box">
+          <div class="dslabel"><label for="zip">Zip Code:</label></div>
+          <div class="dsspace"><input class="first zip" type="text" id="zip" name="zip_code" placeholder="Zip Code"></div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="flex">
+      <legend class="category">Newsletter</legend>
 
-            <div>
-              <input type="checkbox" id="javascriptnews" name="newsletter" value="javascript">
-              <label for="javascriptnews">JavaScript News</label><br>
-            </div>
+      <label class="newslabel">Select the newsletters you would like to receive:</label>
+      <div>
+        <input type="checkbox" id="htmlnews" name="newsletter" value="html">
+        <label for="htmlnews">HTML News</label><br>
+      </div>
 
-            <p>Newsletter Format</p>
-            <div>
-              <input type="radio" id="htmlformat" name="newsletter" value="htmlformat">
-              <label for="htmlformat">HTML</label><br>
-            </div>
+      <div>
+        <input type="checkbox" id="cssnews" name="newsletter" value="css">
+        <label for="cssnews">CSS News</label><br>
+      </div>
 
-            <div>
-              <input type="radio" id="plaintext" name="newsletter" value="plaintext">
-              <label for="plaintext">Plain Text</label><br>
-            </div>
+      <div>
+        <input type="checkbox" id="javascriptnews" name="newsletter" value="javascript">
+        <label for="javascriptnews">JavaScript News</label><br>
+      </div>
 
-            <p>Other topics you'd like to hear about:</p>
-              <textarea class="first" id="Other" name="other"></textarea><br>
+      <label class="newslabel">Newsletter Format</label>
+      <div>
+        <input type="radio" id="htmlformat" name="newsletter" value="htmlformat">
+        <label for="htmlformat">HTML</label><br>
+      </div>
 
-            <button type="submit">Sign Up</button>
-        </fieldset>
-        </form>
-      <footer>
-        <h4>Copyright The Code Review</h4>
-      </footer>
+      <div>
+        <input type="radio" id="plaintext" name="newsletter" value="plaintext">
+        <label for="plaintext">Plain Text</label><br>
+      </div>
+
+      <label class="newslabel" for="other">Other topics you'd like to hear about:</label>
+      <textarea class="first" id="other" name="other"></textarea><br>
+
+    </fieldset>
+
+        <button type="submit">Sign Up</button>
+  </form>
+
+  <footer>
+    <h4>Copyright The Code Review</h4>
+  </footer>
 </body>
 </html>
